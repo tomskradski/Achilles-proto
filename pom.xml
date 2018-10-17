@@ -40,10 +40,10 @@
             <artifactId>spring-boot-starter-mail</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-security</artifactId>-->
+        <!--</dependency>-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -108,7 +108,7 @@
                 <artifactId>liquibase-maven-plugin</artifactId>
                 <version>3.6.2</version>
                 <configuration>
-                    <changeLogFile>${basedir}\src\main\liquibase\changelog-master.xml</changeLogFile>
+                    <changeLogFile>${basedir}\src\main\java\com\radar\achilles\liquibase\changelog-master.xml</changeLogFile>
                     <driver>org.mariadb.jdbc.Driver</driver>
                     <url>jdbc:mariadb://${db.host}:${db.port}/${db.schema}</url>
                     <username>${db.login}</username>
