@@ -1,0 +1,26 @@
+<!--this settings file overrides the settings.xml file in {maven_home}/settings.xml-->
+
+<settings>
+    <profiles>
+        <profile>
+            <id>production</id>
+            <properties>
+                <db.host></db.host>
+                <db.port></db.port>
+                <db.db></db.db>
+                <db.login></db.login>
+                <db.password></db.password>
+            </properties>
+        </profile>
+        <profile>
+            <id>development</id>
+            <properties>
+                <db.host>192.168.206.201</db.host>
+                <db.port>3306</db.port>
+                <db.schema>achillesdb</db.schema>
+                <db.login>achilles</db.login>
+                <db.password>@M0llyb@863*^#</db.password>
+            </properties>
+        </profile>
+    </profiles>
+</settings>
